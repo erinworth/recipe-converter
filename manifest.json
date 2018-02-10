@@ -3,6 +3,8 @@
     "name": "Recipe Calculator",
     "description": "A chrome app that will convert recipes to reflect how many servings you would like to prepare",
     "version": "1.1",
+    "icons": { "16": "images/tableware.png", "128": "images/chefknife.png" },
+
 
     "content_scripts": [
         {
@@ -17,5 +19,9 @@
             ],
             "run_at": "document_end"
         }
-    ]
+    ],
+
+    "browser_action": {
+      "default_popup": "popup.html"
+    }
 }
